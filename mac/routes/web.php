@@ -19,12 +19,9 @@ Route::get('/consultarCliente', function(){
     return view('paginas/consultarCliente');
 });
  
-Route::get('/paginaEditar', function(){
-    return view('paginas/paginaEditar');
-});
  
 Route::get('/cadastrarusuario/salvar',[App\Http\Controllers\registrarClienteController::class, 'store']);
 Route::get('/consultarCliente',[App\Http\Controllers\registrarClienteController::class, 'consultarCliente']);
-Route::get('/editar/{id}', [App\Http\Controllers\registrarClienteController::class, 'paginaEditar']);
+Route::get('/paginaEditar/{id}', [App\Http\Controllers\registrarClienteController::class, 'editar']);
 Route::get('/atualizar/{id}', [App\Http\Controllers\registrarClienteController::class, 'atualizar']);
-Route::get('/excluir/{id}', [App\Http\Controllers\registrarAtividadeController::class, 'excluir']);
+Route::get('/excluir/{id}', [App\Http\Controllers\registrarClienteController::class, 'excluir']);

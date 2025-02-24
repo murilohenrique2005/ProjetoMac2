@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
         {
             Schema::create('registro', function (Blueprint $table ){
-                $table->float('cpf');
+                $table->integer('id');
                 $table->string('nomeC');
                 $table->date('dataN');
                 $table->string('telefone');

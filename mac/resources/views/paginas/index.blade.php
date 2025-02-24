@@ -32,7 +32,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <h4 class="fw-bold">Nossa Missão</h4>
-                    <p>"A MAC tem o compromisso de proporcionar uma experiência única e personalizada a cada cliente, criando conexões verdadeiras e duradouras. Nosso objetivo é ouvir, entender e superar as expectativas dos nossos clientes, sempre com qualidade, transparência e empatia, garantindo a satisfação plena em todas as interações."</p>
+                    <p>A MAC tem o compromisso de proporcionar uma experiência única e personalizada a cada cliente, criando conexões verdadeiras e duradouras. Nosso objetivo é ouvir, entender e superar as expectativas dos nossos clientes, sempre com qualidade, transparência e empatia, garantindo a satisfação plena em todas as interações.</p>
                 </div>
                 <div class="col-md-6">
                     <h4 class="fw-bold">Nossa Visão</h4>
@@ -59,16 +59,16 @@
       <!-- Seção Como Funciona -->
       <section id="como-funciona" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Como Funciona?</h2>
+            <h2 class="text-center mb-4"> Soluções</h2>
             <div class="row text-center">
                 <div class="col-md-4">
                     <div class="card shadow border-0 mb-4">
                         <img src="../img/cliente.png" class="card-img-top" alt="Cliente">
                         <div class="card-body">
-                            <h5 class="card-title">1. Cliente Inicia a Negociação</h5>
-                            <p class="card-text">O cliente pode iniciar uma negociação com um funcionário para obter o melhor acordo.</p>
+                            <h5 class="card-title">Cadastrar Cliente</h5>
+                            <p class="card-text">Estamos prontos para ajudá-lo! Complete seu cadastro para começarmos.</p>
                             <!-- Botão com link dentro do card -->
-                            <a href="/paginaEditar" class="btn btn-primary">Iniciar Negociação</a>
+                            <a href="/cadastrarcliente" class="btn btn-primary">Cadastrar Cliente</a>
                         </div>
                     </div>
                 </div>
@@ -76,10 +76,10 @@
                     <div class="card shadow border-0 mb-4">
                         <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Funcionário">
                         <div class="card-body">
-                            <h5 class="card-title">2. Funcionário Responde</h5>
-                            <p class="card-text">Os funcionários respondem com propostas personalizadas, buscando o melhor interesse para ambas as partes.</p>
+                            <h5 class="card-title">Consultar Clientes</h5>
+                            <p class="card-text">Precisa fazer ajustes? Edite e consulte informações aqui.</p>
                             <!-- Botão com link dentro do card -->
-                            <a href="/cadastrarcliente" class="btn btn-primary">Responder Proposta</a>
+                            <a href="/consultarCliente" class="btn btn-primary">Consultar</a>
                         </div>
                     </div>
                 </div>
@@ -87,10 +87,10 @@
                     <div class="card shadow border-0 mb-4">
                         <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Acordo Final">
                         <div class="card-body">
-                            <h5 class="card-title">3. Acordo Fechado</h5>
-                            <p class="card-text">Uma vez que ambas as partes estejam satisfeitas, o acordo é fechado de maneira segura e eficiente.</p>
+                            <h5 class="card-title">Enviar E-mails</h5>
+                            <p class="card-text">Configure e-mails automáticos para confirmar cadastros, redefinir senhas ou enviar lembretes periódicos.</p>
                             <!-- Botão com link dentro do card -->
-                            <a href="/consultarCliente" class="btn btn-primary">Fechar Acordo</a>
+                            <a href="" class="btn btn-primary">Enviar E-Mail</a>
                         </div>
                     </div>
                 </div>

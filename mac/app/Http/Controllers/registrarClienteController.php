@@ -9,7 +9,7 @@ class registrarClienteController extends Controller
 {
     public function index(){
         $dados =modelAgenda::all();//Todos os dados da tabela do BD
-        return view('paginas.cadastrarusuario')->With('dados',$dados);
+        return view('paginas.cadastrarusuario')->With('dado',$dados);
  
     }//Fim do método - retornar dados
  
@@ -26,7 +26,7 @@ class registrarClienteController extends Controller
         $model = new modelAgenda();
         $model->nomeC = $nome;
         $model->dataN = $data;
-        $model->cpf = $cpf;
+        $model->id = $cpf;
         $model->telefone = $telefone;
         $model->endereco = $endereco;
         $model->briefing = $briefing;
@@ -47,18 +47,18 @@ class registrarClienteController extends Controller
  
     public function editar($cpf){
         $dado = modelAgenda::findOrFail($cpf);
-        return view('paginas.editar', compact('dado'));
+        return view('paginas.paginaEditar', compact('dado'));
  
  
     }//Fim do método
  
     public function atualizar(Request $request, $cpf){
-        modelAgenda::where('cpf',$cpf)->update($request->all());
+        modelAgenda::where('id',$cpf)->update($request->all());
         return redirect('/consultarCliente');
     }//fim do método
  
-    public function excluir(Request $request, $id){
-        modelAgenda::where('id', $id)->delete($request->all());
-        return redirect('/consultar');
+    public function excluir(Request $request, $cpf){
+        modelAgenda::where('id', $cpf)->delete($request->all());
+        return redirect('/consultarCliente');
     }//fim do método
 }//Todas as operações do banco de dados

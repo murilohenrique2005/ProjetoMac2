@@ -17,7 +17,7 @@
                 <div class="card shadow-lg border-0 rounded-4">
                     <div class="card-header text-center bg-dark text-white rounded-4">
                         <!-- Logo em cima do nome "MAC" -->
-                        <img src="logo.png" alt="Logo MAC" class="img-fluid mb-3" style="max-width: 150px;">
+                        <img src="/" alt="Logo MAC" class="img-fluid mb-3" style="max-width: 150px;">
                         <h4>Cadastro de Usuário</h4>
                     </div>
                     <div class="card-body bg-light">
@@ -51,7 +51,7 @@
                             <!-- Briefing do Projeto -->
                             <div class="mb-3">
                                 <label for="briefing" class="form-label">Tema do Projeto</label>
-                                <textarea class="form-control" id="briefing" name="briefing" rows="3" placeholder="Descreva o briefing do projeto" required></textarea>
+                                <textarea class="form-control" id="briefing" name="briefing" rows="3" placeholder="Descreva o tema do projeto" required></textarea>
                             </div>
                             <!-- Data de Emissão -->
                             <div class="mb-3">
