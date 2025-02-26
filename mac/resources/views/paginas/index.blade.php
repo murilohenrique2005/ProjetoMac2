@@ -87,10 +87,10 @@
                     <div class="card shadow border-0 mb-4">
                         <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Acordo Final">
                         <div class="card-body">
-                            <h5 class="card-title">Enviar E-mails</h5>
+                            <h5 class="card-title">Checar E-mails</h5>
                             <p class="card-text">Configure e-mails automáticos para confirmar cadastros, redefinir senhas ou enviar lembretes periódicos.</p>
                             <!-- Botão com link dentro do card -->
-                            <a href="" class="btn btn-primary">Enviar E-Mail</a>
+                            <a href="/checarEmail" class="btn btn-primary">Enviar E-Mail</a>
                         </div>
                     </div>
                 </div>
@@ -104,24 +104,24 @@
     <section id="contato" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Entre em Contato</h2>
-            <form>
+            <form  action="index/salvar" method="GET">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" required>
+                            <label for="nomeContato" class="form-label">Nome</label>
+                            <input type="text" name="nomeContatos" class="form-control" id="nome" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <label for="emailContato" class="form-label">Email</label>
+                            <input type="text" class="form-control" name="emailContatos" id="email" required>
                         </div>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="mensagem" class="form-label">Mensagem</label>
-                    <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                    <label for="mensagemContato" class="form-label">Mensagem</label>
+                    <textarea class="form-control" name="mensagemContatos" id="mensagem" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg shadow-sm">Enviar Mensagem</button>
             </form>

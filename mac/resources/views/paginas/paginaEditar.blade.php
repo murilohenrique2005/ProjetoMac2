@@ -5,7 +5,7 @@
             <img src="caminho/para/sua/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
         </div>
  
-        <h2 class="text-center mb-4">Editar Compromisso</h2>
+        <h2 class="text-center mb-4">Editar Informações</h2>
         <form action="../atualizar/{{$dado->id}}" method="GET">
             <label for="number" class="form-label">CPF</label>
             <input type="number" id="number" name="cpf" value="{{$dado->id}}" class="form-control" disabled required />
@@ -58,7 +58,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Tem certeza que deseja excluir o cliente?
+                        Tem certeza que deseja excluir cliente?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>

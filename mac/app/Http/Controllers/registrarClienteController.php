@@ -14,9 +14,10 @@ class registrarClienteController extends Controller
     }//Fim do método - retornar dados
  
     public function store(request $request){
+        $cpf = $request->input('cpf');
         $nome = $request->input('nomeC');
         $data= $request->input('dataN');
-        $cpf = $request->input('cpf');
+
         $telefone = $request->input('telefone');
         $endereco = $request->input('endereco');
         $briefing = $request->input('briefing');
@@ -24,9 +25,9 @@ class registrarClienteController extends Controller
         $dateEntrega = $request->input('dateEntrega');
 
         $model = new modelAgenda();
+        $model->id = $cpf;
         $model->nomeC = $nome;
         $model->dataN = $data;
-        $model->id = $cpf;
         $model->telefone = $telefone;
         $model->endereco = $endereco;
         $model->briefing = $briefing;
@@ -44,7 +45,7 @@ class registrarClienteController extends Controller
         $cpfs = modelAgenda::all();
         return view('paginas.consultarCliente', compact('cpfs'));
     }//Fim do método
- 
+
     public function editar($cpf){
         $dado = modelAgenda::findOrFail($cpf);
         return view('paginas.paginaEditar', compact('dado'));

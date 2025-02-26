@@ -2,6 +2,7 @@
  
 use Illuminate\Support\Facades\Route;
 use App\Http\Controller\registrarAtividadeController;
+use App\Http\Controller\registrarEmailsController;
  
 Route::get('/', function () {
     return view('paginas/index');
@@ -18,6 +19,9 @@ Route::get('/cadastrarcliente', function(){
 Route::get('/consultarCliente', function(){
     return view('paginas/consultarCliente');
 });
+
+
+ 
  
  
 Route::get('/cadastrarusuario/salvar',[App\Http\Controllers\registrarClienteController::class, 'store']);
@@ -25,3 +29,5 @@ Route::get('/consultarCliente',[App\Http\Controllers\registrarClienteController:
 Route::get('/paginaEditar/{id}', [App\Http\Controllers\registrarClienteController::class, 'editar']);
 Route::get('/atualizar/{id}', [App\Http\Controllers\registrarClienteController::class, 'atualizar']);
 Route::get('/excluir/{id}', [App\Http\Controllers\registrarClienteController::class, 'excluir']);
+
+Route::get('/index/salvar',[App\Http\Controllers\registrarContato::class, 'store']);
